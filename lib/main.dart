@@ -14,7 +14,7 @@ import 'package:my_firebase/screen/login_signup/student_Login/student_login.dart
 import 'package:my_firebase/screen/login_signup/student_Login/student_sign_up.dart';
 import 'package:my_firebase/screen/splash_screen.dart';
 import 'package:my_firebase/screen/user_home_page/student_home_page.dart';
-import 'package:my_firebase/show_users.dart';
+import 'package:my_firebase/show_users%20copy.dart';
 import 'package:my_firebase/update.dart';
 
 Future<void> main() async {
@@ -24,7 +24,7 @@ Future<void> main() async {
     routes: {
       '/': (context) => Home(),
       //'/add': (context) => const AddCourse(),
-      '/showUser': (context) => ShowUser(),
+      '/showUser': (context) => AdminSearchStudent(),
       '/onboardingScreen': (context) => IntroductionSliderBody(),
       '/loginPage': (context) => LoginPage(),
       '/studentLogin': (context) => StudentLogin(),

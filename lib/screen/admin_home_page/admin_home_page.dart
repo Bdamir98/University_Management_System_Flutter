@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_admin_scaffold/admin_scaffold.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_firebase/show_users%20copy.dart';
 
 class AdminHomePage extends StatefulWidget {
   @override
@@ -18,7 +19,13 @@ class _AdminHomePageState extends State<AdminHomePage> {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 10),
-            child: Icon(Icons.notifications),
+            child: InkWell(
+                onTap: () {
+                  setState(() {
+                    AdminSearchStudent();
+                  });
+                },
+                child: Icon(Icons.notifications)),
           ),
         ],
       ),
